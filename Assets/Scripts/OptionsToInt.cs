@@ -19,7 +19,7 @@ public class OptionsToInt : MonoBehaviour
         }
 
         dropdown.ClearOptions();
-        var options = ints.Select(i => i.ToString()).ToList();
+        var options = ints.Select(i => i.ToString() + "fps").ToList();
         dropdown.AddOptions(options);
     }
 
